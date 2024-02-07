@@ -1,0 +1,28 @@
+<div class="portfolio">
+    <div class="main">
+        <h1 class="fw-bolder">PORTFOLIO COMPONENT</h1>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="line1"></div>
+            <i class="fa fa-star mx-3"></i>
+            <div class="line2"></div>
+        </div>
+        <div class="container mt-3">
+            <div class="row g-4">
+                <div class="col-md-4" *ngFor="let item of path">
+                    <div class="my-card" (click)="getImg(item.iPath);isclicked=true">
+                        <img [src]="item.iPath" alt="">
+                        <div class="layer">
+                            <i class="fa fa-plus fa-6x text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="img-layer" *ngIf="isclicked==true" (click)="isclicked=false">
+            <div class="inner">
+                <img (click)="stop($event)" [src]="detailedPath" alt="">
+            </div>
+        </div>
+    </div>
+    
+</div>

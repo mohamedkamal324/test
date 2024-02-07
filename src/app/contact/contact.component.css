@@ -1,0 +1,43 @@
+.contact{
+    margin-top:86px;
+}
+.main{
+    padding: 80px 0;
+    color:#2C3E50 ;
+}
+.line1,.line2{
+    width: 90px;
+    height: 4px;
+    background-color: #2C3E50;
+}
+.form{
+    position: relative;
+}
+.label-animate{
+    overflow: hidden;
+}
+.form label{
+    position: relative;
+    transition: all .5s;
+}
+.form input{
+    display: block;
+    width: 100%;
+    padding:10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 1px 3px 2px -3px gray;
+}
+.container{
+    margin-top: 100px;
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        width: 100% !important;
+    }
+    .send-btn{
+        text-align: center;
+    }
+}

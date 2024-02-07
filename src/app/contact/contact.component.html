@@ -1,0 +1,49 @@
+<div class="contact">
+    <div class="main">
+        <h1 class="fw-bolder text-center">CONATCT SECTION</h1>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="line1"></div>
+            <i class="fa fa-star mx-3"></i>
+            <div class="line2"></div>
+        </div>
+        <div class="container w-50 ">
+            <div class="row gy-5">
+                <div class="col-md-12">
+                    <div class="form">
+                        <div class=" label-animate text-success">
+                            <label [style.top]="name.length>0?'0':'30px'" for="username">User Name:</label>
+                        </div>
+                        <input [(ngModel)]="name"  type="text"  id="username" placeholder="please enter your name">
+                    </div>
+                </div>  
+                <div class="col-md-12">
+                    <div class="form">
+                        <div class=" label-animate text-success">
+                            <label [style.top]="age.length>0?'0':'30px'" for="userage">User Age:</label>
+                        </div>
+                        <input [(ngModel)]="age"  type="text"  id="userage" placeholder="please enter your age">
+                    </div>
+                </div>  
+                <div class="col-md-12">
+                    <div class="form">
+                        <div class=" label-animate text-success">
+                            <label [style.top]="email.length>0?'0':'30px'" for="useremail">User email:</label>
+                        </div>
+                        <input [(ngModel)]="email"  type="email"  id="useremail" placeholder="please enter your email">
+                    </div>
+                </div>  
+                <div class="col-md-12">
+                    <div class="form">
+                        <div class=" label-animate text-success">
+                            <label [style.top]="pass.length>0?'0':'30px'" for="userpass">User password:</label>
+                        </div>
+                        <input [(ngModel)]="pass"  type="password"  id="userpass" placeholder="please enter your password">
+                    </div>
+                </div>  
+            </div>
+            <div class="mt-4 send-btn">
+                <button class="btn btn-success text-white ">Send Message</button>
+            </div>
+        </div>
+    </div>
+</div>
